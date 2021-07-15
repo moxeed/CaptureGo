@@ -1,0 +1,80 @@
+﻿@model Guid
+
+<div>
+    <div>
+        <h2 id="header"></h2>
+        <h2 id="winner"></h2>
+        <a href="/NewGame" class="btn btn-warning d-inline-block">New Game</a>
+    </div>
+    <div id="board"></div>
+</div>
+
+
+@section Scripts
+{
+    <div>
+        <script>
+        var player = "@Model.ToString()";
+        var timer;
+
+        function setUpBoard(data)
+        {
+            if (!data) retun;
+
+            if (data.state === 2)
+                clearInterval(timer);
+
+            $("#header").html(data.stateName);
+
+            if(data.winnerColor !== null)
+                $("#winner").html("winner is : " + (data.winnerColor ? "white" : "black"));
+
+            var board = data.board.map((row, rowIndex) =>
+            {
+                var rowItems = row.map((i, colIndex) =>
+                {
+                    var divClass = ""
+                    if (i.color == null)
+                        divClass = "add";
+                    else if (i.color)
+                        divClass = "white";
+                    else
+                        divClass = "black";
+
+                    return `<div class="point ${divClass}" 
+                                data-x="${rowIndex}" 
+                                data-y="${colIndex}">
+                            </div>`
+                }).join("\n");
+                return `<div>${rowItems}</div>`
+            }).join("\n");
+
+            $("#board").html(board);
+
+            $(".point").click(handlePlaceStone);
+        }
+
+        function refreshBoard()
+        {
+            $.get(`/Operation/GameState/${player}`)
+                .done(setUpBoard)
+                .fail(err => console.log(err));
+        }
+
+        function handlePlaceStone(e)
+        {
+            var target = $(e.target);
+
+            $.get(`/Operation/PlaceStone/${player}/${target.data("x")}/${target.data("y")}`)
+            .done(refreshBoard)
+            .fail(err => console.log(err));
+        }
+
+        $(() => {
+            refreshBoard();
+            timer = setInterval(refreshBoard, 800);
+        });
+
+        </script>
+    </div>
+}

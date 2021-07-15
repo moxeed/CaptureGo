@@ -1,1 +1,23 @@
-# CaptureGo
+# Simple Capture Go
+in this game we have two players in black and white colors. black starts the game, and it finishes when one side take a stone of another hand as hostage.
+
+# Used Technologies
+.NET 5 for back ground
+bootstrap for simple styling
+jquery for SPA page rendering and data pulling for real-time synchronization
+
+# Set Up
+there is no hard step for project start. you just need to open it in visual studio or any other .NET core deployment platform and run it.
+![enter image description here](https://lh3.googleusercontent.com/lSZuD-pTBceWy4PO0PfEcdjZ4b8kmH7qAExAaaYej6725uWztI1KRLhH5vRNUmW7xrQ3t6sT_I1RVgIF1DjXljFzBpazklMJOtZ7-gwk1027V_cAHFRt7JZo0JIzNwNamkRFIr73qtFoaR1Q3yNmWq9hCtCJq91Fv0EPEiyNed5ViZDxuaexMuCYVZzAed9AKrQ-60jYZ888rUJcTBJbY-IPuyZ_wP3-5CC3RD5UveiOb7mqh-dxAnVxj3WyF-yaKnZymqWc4LHAQJndBmXEG5t7ePjswsw0nH7L0Lvov-P8oKaVD_aY4kRMlj9vJLOb2TuQnTOCUJWxGsWI04W2zm0B_CwwSG22ReWRHOLR8qQ3TbUw1-aQ4BMHy1x8OF_GI7rg8qIBl1JF2GCpM6MQytiU1K95VHDPcJhpWaC7mQUkE6r7QifeHIbB_2vGHy45II95RLPwg-6I3a8U6En21u5MOW1wVRGYF5VAj5hOKipbuj0poak0H5TI6wTrdk5okN_JOtO4ggA__g2qg07VhyoxEDAkgnUIRobmOovqGOA3mBIMkjLQnaD2_U83mRKd5FQ_-DhW0pS38Jwq1hRXEafuLCTO1SPXhecG-0mXeGaLM2r8TqruUA_YyqrMQ2N9UrMNKU3Px5EGCo69klUXaNDBGtQ4PPqokwmVsyLyyCOjXTgYlxTMOmF0tolJipBKCJbrmPK3AGbJqSZ2cfyrvQ=w961-h762-no?authuser=0)
+# Creating a Game
+after the project is hosted when you open a browser to "~/" path, a game board will be loaded for you. as you can see the game still waits for another player so you need to open another browser window to "~/" path to start the game.
+at any point, if you want to reset the game, there is a "New Game" button. after clicking on it you need to reply steps described above.
+![enter image description here](https://lh3.googleusercontent.com/JzTnwjHeTLpP6bQNNNIxlZ3behoq-fXx0AKRkJBnPkqwAr8dYJxb0ZRq6gAHMbvaeNSY99fI-QthYRMrSesOd-ZsDoHlM0n8rQQmKUWEEIuSTI9DXNWcjUfiUDR0dt54p2w2wp1vZKdKJiKfZWiHBG3TqJv_TsaFyZgN3rDtUltLY8BvwvBis1DMSxeWNe1_qs5QxIOmYMiYjMmUhzF6U7diFP6XQ-HT2s77Gdxyr08KqaAx4gag6um_yqdEY_rsz3Og3L15Ot-5cSid8kqxTyyA8VT_ERG8G1AR215Jvh9wa7XYk-xlwAQyqG9LOnUCQ5fSriibVrQKA_ZwzEGg04MevG56NWSJ5qKzPiPIR6dShUEf0LKwvuc6GTSfJtaxvg4oUs6S_CSkENzYUIHoGwVsKHu4_fRwWY2STttLWbKTuGQ6y777Ii9W9F7P6EDQDK-sYYz9lfBPBA7XnQQ3UFAGSuszi8EdTbtwc4mJQWOHP0pYkU5qOefz6a9h7WcPjq-XqHTiZEtKXjYOp6GvEKOCuB_g4wkv2NmP3Ve5ckk95jEJKcwmKrTTX4Unr-Mw6ULmso0NVJWoOcAUO-N-85gSB7Oa6Zqrav3al-jOxIVwyVfdkqeyETH3DfAWxBXY137zIGpS4X9YKtKvqThola9jGk29373fcjfYb7OKE5FZiGpnmJuq0VCeJtSv2vicNrZoANaLOXrdr7qJc9NdQA=w1915-h794-no?authuser=0)
+# Play
+if its your turn to play you will see it at the top screen, there will be a "YourTurn" text.
+now if you click on any empty crosses a stone of your color will be placed there. now, its your opponent turn.
+![enter image description here](https://lh3.googleusercontent.com/be_25bGg6TNvusKe9nyjVf7RpePcH8N4cLFBRJ343H5CIObXGbWWXUrOscmUPRJYvJy7grVuu3DqwhVTk6ws3nDs78yvLraD_25WyK0WHQGfPq8O7eTKuVtN9n0ljutId2RBkjrGXtOQlx3gQtMj0YN5j0ryMZUddKyH6LD9S_-fZ6dp9jmThayNvCGi0MLD7-1hX9XUnfegHtu_w39XHK0z8ow4D1epltwJXdpt1WPdSDC8JTdNvppTQFcR43SNSk0w7RsAvLdcMZMBAF4cThQyYmo1iXCWkAKMS1BOrbyMi3Uh-nSdVzJCOmbAg2JNL5pazDPt4RW-byqYh32Lk0TDC8WTPXBlQuxXGmTUeBciYa8_MhlNBZZzvVMumD-3OMthdhEwoA6C8IV2oLcou2xilHHlQddPI5BQnUabVydIPAApR8C2ZlMR9RmWNGqaRMUkUPhxFN8qKFj3njF6dQzO5JzYDluWJC6qm7eUQoV8_lOVLDfAGpH2xtlXeKh7kRbEWeje_3HwDGml3OzaMKX7MIA8ev4ohh-3xrPMXscpiP4eUSu9It3bxy544x8Xi9LugoEEM9IwllPtdC9bQxbnr9b-0bIMWWqWd5-JxVZrFO0Dab5MmMhwS39B3Q_r6rT0JPol7a-MMdvNAlt3OW4ZLVvt7lQWkFslm5-InQQHVzy5mjVWu2sO_Wro5YhAZINM8RQCi0bl-2rt-ciwUA=w1920-h789-no?authuser=0)
+ 
+# Finish
+Game ends when one player take a prisoner. "Finished" text will be showed at top and winner color follows it. if you want another round use "New Game" button.
+![enter image description here](https://lh3.googleusercontent.com/-_i14-ppv2FFwj2dioRRvPa-yZvTntbMA3o-2MzCAHAiVjbXTEDaobuJtdpKjNZX-u2EprT92DxLqxaKdghStfIy9ZSBEFXrcNeP-EpAbzeVMRnf9lef7GzF6AV7O6H1lkffjmztl_qNHJWjc_7KIsNG2iETuH4Ags68IGrLrRi8ZXY9MkWtl_O82qPeivEmRVowdJ9cwtg1GDq5hJmSb4twFlUTLwdUlsjM-iQaaT9yRUCIYiXywx3ezmgbaCblCl6pByHfhTQ6WDsnSpSsp2wM7_-1wsczKxDzRCbxRRGKcoXyMZF1qHVKESYLbjvlH8TvYhA4r-OKidO8iqvf18Oi-DJ1tC6QjykNHSqjcUUJ0Vsz_QdOIP_ccHvZHYylyug7VwW89GxkD8NfN6eo122e6JcPUpyRePw_l0dco0MYcyCDz31y5DAGc9U0rBLLmuMYIgDWVwmGCami0NisQ5OsH2EEd9rqxA26idyZ235bjhI8Df-RFcQuPXdcsj3YJqhiSEqGLXWx42JaQnUBa_zj1rcugWRrFsz4biKOVl9k2BeuAgzZsw_oKMjMK6b1iHvu-ZyJC1CAlck5uxLunaxRh7B3-doWhPc9dnp4gcNk4dsLAmiI_e9xeH1i3WM7tbheW5YGjkHWoNe_owlUQTC4tYX-3KvTO5YVdEj8Lz79V-RKNUQSpjG4EUTjBNNc4Lu64M3fIJ673xArm1W1kA=w1916-h797-no?authuser=0)
